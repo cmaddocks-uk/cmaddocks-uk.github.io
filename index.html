@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; form-action 'none'; frame-ancestors 'none'; base-uri 'none';">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()">
+
+<title>Christopher Maddocks &mdash; Free Tools for UK Schools &amp; Colleges</title>
+<meta name="description" content="Free, browser-based planning and self-assessment tools for UK schools and colleges. No accounts, no tracking, no data leaves your device.">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cmaddocks-uk.github.io/">
+<meta property="og:title" content="Christopher Maddocks &mdash; Free Tools for UK Schools &amp; Colleges">
+<meta property="og:description" content="Free, browser-based planning and self-assessment tools for UK schools and colleges. No accounts, no tracking, no data leaves your device.">
+
+<style>
+  :root {
+    --navy: #0b2545;
+    --navy-2: #13315c;
+    --accent: #1f6feb;
+    --bg: #f7f9fc;
+    --card: #ffffff;
+    --text: #0f172a;
+    --muted: #5b6a82;
+    --line: #e3e8ef;
+    --shadow: 0 1px 2px rgba(15,23,42,.04), 0 4px 12px rgba(15,23,42,.06);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* Hero */
+  .hero {
+    text-align: center;
+    padding: 64px 0 32px;
+  }
+  .hero .logo { font-size: 56px; margin-bottom: 8px; line-height: 1; }
+  h1 {
+    font-size: 32px; font-weight: 800; color: var(--navy);
+    letter-spacing: -.02em; margin: 0 0 10px; line-height: 1.2;
+  }
+  .lede {
+    font-size: 16px; color: var(--muted); max-width: 560px;
+    margin: 0 auto 18px;
+  }
+  .feature-pills {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    justify-content: center; margin-top: 14px;
+  }
+  .feature-pill {
+    display: inline-block; padding: 5px 12px; border-radius: 999px;
+    background: #eaf2fd; color: var(--accent); font-size: 13px; font-weight: 600;
+    border: 1px solid #cdd9ed;
+  }
+
+  /* Tools grid */
+  .tools-section { padding: 24px 0 16px; }
+  .section-label {
+    font-size: 11px; font-weight: 700; color: var(--muted);
+    letter-spacing: .08em; text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .tools-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 18px;
+  }
+  @media (max-width: 720px) { .tools-grid { grid-template-columns: 1fr; } }
+  .tool-card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    border-top: 4px solid var(--accent);
+    padding: 22px; box-shadow: var(--shadow);
+    text-decoration: none; color: var(--text);
+    display: flex; flex-direction: column; gap: 10px;
+    transition: transform .15s, box-shadow .15s;
+  }
+  .tool-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(15,23,42,.05), 0 12px 24px rgba(15,23,42,.1);
+    text-decoration: none;
+  }
+  .tool-card .icon { font-size: 32px; line-height: 1; }
+  .tool-card h2 {
+    font-size: 18px; font-weight: 700; color: var(--navy);
+    margin: 0; line-height: 1.3;
+  }
+  .tool-card p {
+    font-size: 14px; color: var(--text); margin: 0; line-height: 1.5;
+  }
+  .tool-card .meta {
+    font-size: 12px; color: var(--muted); font-style: italic;
+  }
+  .tool-card .cta {
+    display: inline-flex; align-items: center; gap: 4px;
+    font-size: 14px; font-weight: 700; color: var(--accent);
+    margin-top: auto; padding-top: 4px;
+  }
+
+  /* About */
+  .about {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 22px; margin: 24px 0; box-shadow: var(--shadow);
+  }
+  .about h2 {
+    font-size: 16px; font-weight: 700; color: var(--navy); margin: 0 0 10px;
+  }
+  .about p { font-size: 14px; margin: 0 0 10px; line-height: 1.6; }
+  .about p:last-child { margin-bottom: 0; }
+  .about a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  .about a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center; padding: 24px 0 48px;
+    font-size: 12px; color: var(--muted);
+  }
+  footer a { color: var(--muted); margin: 0 8px; text-decoration: none; font-weight: 600; }
+  footer a:hover { color: var(--accent); text-decoration: underline; }
+  footer .copyright { margin-top: 8px; opacity: .8; font-size: 11px; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <section class="hero">
+    <div class="logo">&#x1F6E1;&#xFE0F;</div>
+    <h1>Christopher Maddocks</h1>
+    <p class="lede">
+      Free, browser-based planning and self-assessment tools for UK schools and colleges. Built as a contribution to the UK education community.
+    </p>
+    <div class="feature-pills">
+      <span class="feature-pill">&check; Free to use</span>
+      <span class="feature-pill">&check; No account needed</span>
+      <span class="feature-pill">&check; No data leaves your device</span>
+      <span class="feature-pill">&check; Open source</span>
+    </div>
+  </section>
+
+  <section class="tools-section">
+    <div class="section-label">Tools</div>
+    <div class="tools-grid">
+      <a class="tool-card" href="/cyber-response/">
+        <div class="icon">&#x1F6A8;</div>
+        <h2>Cyber Incident Response Planner</h2>
+        <p>Build a Cyber Incident Response Plan mapped to NCSC, DfE Digital Standards 2030, DfE RPA and the Ofsted Inspection Toolkit. Includes readiness check, plan builder, six playbooks, governor report and a printable First 30 Minutes card.</p>
+        <span class="meta">Designed to complement the DfE Cyber Security Hub.</span>
+        <span class="cta">Open the Cyber Response Planner &rarr;</span>
+      </a>
+
+      <a class="tool-card" href="/dfe-standards/">
+        <div class="icon">&#x1F3AF;</div>
+        <h2>DfE Digital Standards 2030 &mdash; Self-Assessment</h2>
+        <p>Self-assess your school or college against the six core DfE Digital and Technology Standards. Helps SLT, IT and governors see where you sit on the journey to 2030 and what to prioritise next.</p>
+        <span class="meta">Companion to the Cyber Response Planner.</span>
+        <span class="cta">Open the Self-Assessment Tool &rarr;</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>About</h2>
+    <p>
+      I'm <strong>Christopher Maddocks</strong>, a former <a href="https://anme.co.uk/" target="_blank" rel="noopener noreferrer">ANME (Association of Network Managers in Education)</a> Ambassador. These tools are built and maintained as free contributions to the UK education community &mdash; designed to be genuinely useful for schools, colleges and multi-academy trusts working towards the DfE Digital Standards 2030 and a stronger cyber posture.
+    </p>
+    <p>
+      All tools run entirely in your browser. No data is sent anywhere &mdash; no accounts, no cookies, no fingerprinting. Anonymous page-view counts via <a href="https://www.goatcounter.com/help/gdpr" target="_blank" rel="noopener noreferrer">GoatCounter</a> (privacy-friendly, GDPR-compliant) so I can see broadly how the tools are used.
+    </p>
+    <p>
+      Source code lives on <a href="https://github.com/cmaddocks-uk" target="_blank" rel="noopener noreferrer">GitHub</a>. Found a bug, want to suggest an improvement, or want to say thanks? Each tool has its own feedback form and there's a <a href="https://buymeacoffee.com/cmaddocks" target="_blank" rel="noopener noreferrer">Buy me a beer</a> link if you've found these useful.
+    </p>
+  </section>
+
+  <footer>
+    <a href="https://github.com/cmaddocks-uk" target="_blank" rel="noopener noreferrer">GitHub</a> &middot;
+    <a href="https://buymeacoffee.com/cmaddocks" target="_blank" rel="noopener noreferrer">Buy me a beer</a>
+    <div class="copyright">&copy; 2026 Christopher Maddocks &middot; MIT licensed where source available</div>
+  </footer>
+
+</div>
+
+</body>
+</html>
